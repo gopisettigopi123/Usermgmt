@@ -22,14 +22,22 @@ export default function Header({
     <header className="glass-card" style={{ padding: '1.5rem', marginBottom: '1rem', display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
         <div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-            <div style={{
-              width: '10px',
-              height: '10px',
-              borderRadius: '50%',
-              backgroundColor: 'var(--accent-teal)',
-              boxShadow: '0 0 10px var(--accent-teal)'
-            }} />
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.625rem', marginBottom: '0.25rem' }}>
+            {/* Styled Geometric SVG Logo representing Ajackus's clean identity */}
+            <svg width="22" height="22" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
+              <path d="M50 5L92 87H70L50 45L30 87H8L50 5Z" fill="url(#ajackus-header-gradient)" />
+              <path d="M50 32L68 70H32L50 32Z" fill="var(--text-primary)" opacity="0.9" />
+              <defs>
+                <linearGradient id="ajackus-header-gradient" x1="8" y1="5" x2="92" y2="87" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stopColor="#EA4335" />
+                  <stop offset="100%" stopColor="#C5221F" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <span style={{ fontSize: '0.95rem', color: 'var(--text-primary)', fontWeight: '800', letterSpacing: '0.02em', fontFamily: 'var(--font-heading)' }}>
+              JACKUS
+            </span>
+            <span style={{ color: 'var(--panel-border-hover)', fontSize: '0.85rem' }}>|</span>
             <span style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--accent-teal)', fontWeight: '700' }}>
               Admin Console
             </span>

@@ -218,6 +218,26 @@ export default function UserDetailsPage() {
       {/* Main Glassmorphic Details Card */}
       <div className="glass-card" style={{ padding: '1.5rem' }}>
         <div style={{ borderBottom: '1px solid var(--panel-border)', paddingBottom: '1rem', marginBottom: '1.5rem' }}>
+          {/* Logo row */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.375rem' }}>
+            <svg width="18" height="18" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
+              <path d="M50 5L92 87H70L50 45L30 87H8L50 5Z" fill="url(#ajackus-details-gradient)" />
+              <path d="M50 32L68 70H32L50 32Z" fill="var(--text-primary)" opacity="0.9" />
+              <defs>
+                <linearGradient id="ajackus-details-gradient" x1="8" y1="5" x2="92" y2="87" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stopColor="#EA4335" />
+                  <stop offset="100%" stopColor="#C5221F" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <span style={{ fontSize: '0.85rem', color: 'var(--text-primary)', fontWeight: '800', fontFamily: 'var(--font-heading)' }}>
+              Ajackus
+            </span>
+            <span style={{ color: 'var(--panel-border-hover)', fontSize: '0.8rem' }}>|</span>
+            <span style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--accent-teal)', fontWeight: '700' }}>
+              Details Console
+            </span>
+          </div>
           <h2 style={{ fontSize: '1.5rem', fontWeight: '800' }}>
             {isEditMode ? 'Edit User details' : 'Create User Credentials'}
           </h2>
