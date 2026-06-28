@@ -98,6 +98,12 @@ Ensure you have [Node.js](https://nodejs.org/) installed (version 18+ recommende
   npm run lint
   ```
 
+- **Unit Tests**:
+  Execute the Vitest test runner to run unit test suites:
+  ```bash
+  npm run test
+  ```
+
 ---
 
 ## Technical Stack & Libraries
@@ -106,6 +112,7 @@ Ensure you have [Node.js](https://nodejs.org/) installed (version 18+ recommende
 - **Zustand 5**: Centralized state management.
 - **React Router 7**: Declarative page routing.
 - **Vite 8**: Next-generation frontend tooling and bundler.
+- **Vitest**: Blazing fast, lightweight testing runner compatible with Vite configs.
 - **Axios**: Promised-based HTTP client for API transactions.
 - **Oxlint**: Highly optimized linter to maintain code quality.
 - **Custom CSS3**: Custom glassmorphism, transitions, skeleton loaders, and styles (no heavy CSS frameworks).
